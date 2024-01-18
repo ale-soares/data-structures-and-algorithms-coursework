@@ -14,13 +14,13 @@ class LinkedList {
   }
 
   pop() {
-		// If the list is empty (i.e., the length attribute is 0), return undefined.
-		// Traverse the list to find the second last node. Use two pointers temp and pre to keep track of the current node and the previous node while traversing.
-		// Set the tail attribute of the list to the second last node (i.e., the pre pointer).
-		// Set the next attribute of the new tail node to null, effectively removing the last node from the list.
-		// Decrease the length attribute by one.
-		// If the list becomes empty after the pop operation (i.e., the length attribute becomes 0), set both head and tail pointers to null.
-		// Return the removed node.
+    // If the list is empty (i.e., the length attribute is 0), return undefined.
+    // Traverse the list to find the second last node. Use two pointers temp and pre to keep track of the current node and the previous node while traversing.
+    // Set the tail attribute of the list to the second last node (i.e., the pre pointer).
+    // Set the next attribute of the new tail node to null, effectively removing the last node from the list.
+    // Decrease the length attribute by one.
+    // If the list becomes empty after the pop operation (i.e., the length attribute becomes 0), set both head and tail pointers to null.
+    // Return the removed node.
 
     if (!this.head) return undefined;
 
@@ -40,7 +40,7 @@ class LinkedList {
       this.head = null;
       this.tail = null;
     }
-		
+
     return temp;
   }
 }

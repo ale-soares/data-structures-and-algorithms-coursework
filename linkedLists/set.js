@@ -26,10 +26,10 @@ class LinkedList {
   }
 
   set(index, value) {
-		// Use the get method to get the node at the given index. If the get method returns null (which means the index is invalid), the set method should also return false.
-		// If the get method returns a valid node, set the value of the node to the new value.
-		// Return true if the value has been successfully set.
-		
+    // Use the get method to get the node at the given index. If the get method returns null (which means the index is invalid), the set method should also return false.
+    // If the get method returns a valid node, set the value of the node to the new value.
+    // Return true if the value has been successfully set.
+
     let temp = this.get(index);
     if (temp) {
       temp.value = value;
