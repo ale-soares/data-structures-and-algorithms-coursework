@@ -52,7 +52,7 @@ class DoublyLinkedList {
     if (index < 0 || index > this.length) return false;
 
     const newNode = new Node(value);
-    const before = this.length(index - 1);
+    const before = this.get(index - 1);
     const after = before.next;
 
     before.next = newNode;
