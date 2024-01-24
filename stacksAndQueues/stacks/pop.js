@@ -12,16 +12,14 @@ class Stack {
     this.length = 1;
   }
 
-  push(value) {
-    const newNode = new Node(value);
-    if (this.length === 0) {
-      this.top = newNode;
-    } else {
-      newNode.next = this.top;
-      this.top = newNode;
-    }
+  pop() {
+    if (this.length === 0) return undefined;
 
-    this.length++;
-    return this;
+    let temp = this.top;
+    this.top = this.top.next;
+    temp.next = null;
+
+    this.length--;
+    return temp;
   }
 }
