@@ -5,7 +5,7 @@
 
 // My Solution:
 function firstNonRepeatingChar(str) {
-  charCounts = {};
+  let charCounts = {};
 
   for (var char of str) {
     charCounts[char] = (charCounts[char] || 0) + 1;
@@ -32,7 +32,7 @@ function firstNonRepeatingChar(string) {
 
   for (let i = 0; i < string.length; i++) {
     const c = string.charAt(i);
-    
+
     if (charCounts[c] === 1) {
       return c;
     }
