@@ -15,7 +15,7 @@ class BinarySearchTree {
     while (currentNode.left !== null) {
       currentNode = currentNode.left;
     }
-    
+
     return currentNode;
   }
 }
